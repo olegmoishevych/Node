@@ -1,0 +1,1 @@
+cmd_Release/addon.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.15 -arch x86_64 -L./Release -stdlib=libc++ -L/usr/local/opt/curl/lib -o Release/addon.node Release/obj.target/addon/hello.o Release/obj.target/addon/calculator.o 
